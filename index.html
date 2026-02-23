@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dog Point Shop</title>
+
+<style>
+body{
+  margin:0;
+  font-family: Arial, sans-serif;
+  background:#f4f7f6;
+}
+
+header{
+  background: linear-gradient(90deg,#0f3d3e,#2e8b57);
+  color:white;
+  text-align:center;
+  padding:40px 20px;
+}
+
+header h1{
+  margin:0;
+  font-size:42px;
+}
+
+header p{
+  margin-top:10px;
+  font-size:18px;
+}
+
+.container{
+  max-width:1100px;
+  margin:auto;
+  padding:40px 20px;
+}
+
+.products{
+  display:grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  gap:25px;
+}
+
+.card{
+  background:white;
+  border-radius:15px;
+  box-shadow:0 8px 20px rgba(0,0,0,0.08);
+  overflow:hidden;
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-5px);
+}
+
+.card img{
+  width:100%;
+  height:220px;
+  object-fit:cover;
+}
+
+.card-content{
+  padding:20px;
+  text-align:center;
+}
+
+.price{
+  font-size:20px;
+  font-weight:bold;
+  color:#2e8b57;
+  margin:10px 0;
+}
+
+.btn{
+  display:inline-block;
+  background:#0f3d3e;
+  color:white;
+  padding:10px 20px;
+  border-radius:8px;
+  text-decoration:none;
+  margin-top:10px;
+}
+
+footer{
+  background:#0f3d3e;
+  color:white;
+  text-align:center;
+  padding:25px;
+  margin-top:40px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Dog Point Shop</h1>
+<p>Todo para tu mejor amigo 🐶</p>
+</header>
+
+<div class="container">
+<h2 style="text-align:center;margin-bottom:30px;">Nuestros Productos</h2>
+
+<div class="products">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1601758228041-f3b2795255f1" alt="Collar">
+<div class="card-content">
+<h3>Collar Premium</h3>
+<div class="price">$299 MXN</div>
+<a href="https://wa.me/526621896799" class="btn">Comprar por WhatsApp</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e" alt="Juguete">
+<div class="card-content">
+<h3>Juguete Resistente</h3>
+<div class="price">$189 MXN</div>
+<a href="https://wa.me/526621896799" class="btn">Comprar por WhatsApp</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1558944351-c9f64d9b27ff" alt="Plato">
+<div class="card-content">
+<h3>Plato Antideslizante</h3>
+<div class="price">$249 MXN</div>
+<a href="https://wa.me/526621896799" class="btn">Comprar por WhatsApp</a>
+</div>
+</div>
+
+</div>
+</div>
+
+<footer>
+© 2026 Dog Point Shop | Hermosillo
+</footer>
+
+</body>
+</html>
